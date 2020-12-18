@@ -59,6 +59,7 @@ class LeNet5(nn.Module):
         x = self.fc(x)
         return x
 
+
 # 测试数据
 x = torch.rand((2, 1, 32, 32))
 lenet = LeNet5()
