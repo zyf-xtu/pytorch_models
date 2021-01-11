@@ -159,9 +159,11 @@ class ResNet(nn.Module):
         x = self.fc(x)
         return x
 
-
+x = torch.rand((2,3,224,224))
 res = ResNet()
 print(res)
+out = res(x)
+print(out)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 res = res.to(device)
 summary(res, (3, 224, 224))

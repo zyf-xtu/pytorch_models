@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/pytorch_models.iml" filepath="$PROJECT_DIR$/.idea/pytorch_models.iml" />
+      <module fileurl="file://E:/python/pycharm/wz/.idea/wz.iml" filepath="E:/python/pycharm/wz/.idea/wz.iml" />
     </modules>
   </component>
 </project>

@@ -200,9 +200,11 @@ class ResNet50(nn.Module):
         out = self.fc(out)
         return out
 
-
+x = torch.rand((2,3,224,224))
 res50 = ResNet50()
 print(res50)
+out = res50(x)
+print(out)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 res50 = res50.to(device)
 summary(res50, (3, 224, 224))

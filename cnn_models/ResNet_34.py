@@ -181,9 +181,11 @@ class ResNet34(nn.Module):
         return out
 
 
-
+x = torch.rand((2,3,224,224))
 res34 = ResNet34()
 print(res34)
+out = res34(x)
+print(out)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 res34 = res34.to(device)
 summary(res34,(3,224,224))
