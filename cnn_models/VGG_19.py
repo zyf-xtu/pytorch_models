@@ -7,6 +7,7 @@
 import torch
 import torch.nn as nn
 from torchsummary import summary
+# from torchviz import make_dot
 
 '''
     手撕VGG19网络结构
@@ -125,6 +126,8 @@ vgg19 = VGG19(1000)
 print(vgg19)
 out = vgg19(x)
 print(out)
+# g = make_dot(out)
+# g.view()
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 vgg19 = vgg19.to(device)
 # 展示网络模型的数据流向及参数信息
