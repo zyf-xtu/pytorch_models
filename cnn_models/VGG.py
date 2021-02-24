@@ -9,7 +9,7 @@ import torch.nn as nn
 from torchsummary import summary
 
 '''
-    已经单独实现了VGG16、VGG19等VGG网络，但是由于是纯代码堆叠，比较臃肿，这里仿照ResNet官方重写一个VGG网络，
+    已经单独实现了VGG16、VGG19等VGG网络，但是由于是纯代码堆叠，比较臃肿，这里仿照VGG官方重写一个VGG网络，
     通过参数、模块化实现不同层的网络结构。
     代码结构：
         主体结构:VGG
